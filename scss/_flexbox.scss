@@ -1,0 +1,8 @@
+/* common flexbox setting */
+#header-sample-project,
+#flexbox-container,
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

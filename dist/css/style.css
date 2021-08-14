@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting Body CSS */
+body {
+  font-family: "Fredoka One", cursive;
+}
+
+/* Reseting Link: a */
+a {
+  text-decoration: transparent;
+  color: #c2ffd9;
+  transition: all 0.6s ease;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+/* common flexbox setting */
+#header-sample-project,
+#flexbox-container,
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header#header-sample-project {
+  justify-content: space-evenly;
+  text-align: center;
+  height: 4rem;
+  background: #ff4848;
+  font-size: 2rem;
+}
+
+header#header-sample-project a:hover {
+  text-decoration: underline;
+}
+
+#flexbox-container {
+  justify-content: unset;
+  align-items: unset;
+  width: 100vw;
+  height: calc(100vh - 4rem);
+}
+
+#flexbox-container .flex-item {
+  text-align: center;
+  width: 100%;
+  transition: all 0.6s ease;
+}
+
+#flexbox-container .flex-item h1 {
+  transform: rotate(90deg);
+  transition: all 0.6s ease;
+}
+
+#flexbox-container .flex-item:nth-child(1) {
+  background: #fff338;
+}
+
+#flexbox-container .flex-item:nth-child(2) {
+  background: #ff449f;
+}
+
+#flexbox-container .flex-item:nth-child(3) {
+  background: #007965;
+}
+
+#flexbox-container .flex-item:nth-child(1):hover, #flexbox-container .flex-item:nth-child(2):hover, #flexbox-container .flex-item:nth-child(3):hover {
+  width: 300%;
+}
+
+#flexbox-container .flex-item:nth-child(1):hover h1, #flexbox-container .flex-item:nth-child(2):hover h1, #flexbox-container .flex-item:nth-child(3):hover h1 {
+  transform: rotate(0);
+  font-size: 7rem;
+}
+/*# sourceMappingURL=style.css.map */

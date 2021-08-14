@@ -1,0 +1,55 @@
+// Load Partials
+@import "config";
+@import "utility";
+@import "flexbox";
+
+header#header-sample-project {
+  justify-content: space-evenly;
+  text-align: center;
+  height: 4rem;
+  background: $bg-header-color;
+  font-size: 2rem;
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
+#flexbox-container {
+  justify-content: unset;
+  align-items: unset;
+  width: 100vw;
+  height: calc(100vh - 4rem);
+
+  .flex-item {
+    text-align: center;
+    width: 100%;
+    transition: $trans-all;
+
+    h1 {
+      transform: rotate(90deg);
+      transition: $trans-all;
+    }
+
+    &:nth-child(1) {
+      background: $bg-grid-color-1;
+    }
+    &:nth-child(2) {
+      background: $bg-grid-color-2;
+    }
+    &:nth-child(3) {
+      background: $bg-grid-color-3;
+    }
+
+    &:nth-child(1):hover,
+    &:nth-child(2):hover,
+    &:nth-child(3):hover {
+      width: 300%;
+
+      h1 {
+        transform: rotate(0);
+        font-size: 7rem;
+      }
+    }
+  }
+}

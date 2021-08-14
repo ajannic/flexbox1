@@ -1,0 +1,18 @@
+$bg-header-color: #ff4848;
+$bg-grid-color-1: #fff338;
+$bg-grid-color-2: #ff449f;
+$bg-grid-color-3: #007965;
+$font-fredoka: "Fredoka One", cursive;
+$trans-all: all 0.6s ease;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting Body CSS */
+body {
+  font-family: $font-fredoka;
+}
